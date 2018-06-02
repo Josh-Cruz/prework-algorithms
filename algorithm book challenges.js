@@ -161,19 +161,53 @@ dojoCount();
 // incoming. Please console.log this value.
 
 
+function input(z){
+	console.log(z);
+}
 
 
 //  Whoa, That Sucker’s Huge…
 // Add odd integers from -300,000 to 300,000, and
 // console.log the final sum. Is there a shortcut?
+
+function hugeSucker(){
+	var sum =0;
+for (var i = 1; i <= 300000 ; i= i+2) {
+	sum += i;
+	}
+	console.log(sum);
+}
+
 //  Countdown by Fours
 // Log positive numbers starting at 2016, counting
 // down by fours (exclude 0), without a FOR loop.
+
+function countByFour(){
+	var num = 2016;
+	while(num > 0){
+		if (num % 2 === 0 ) {
+			console.log(num);
+			num = num - 4;
+		}
+
+	}
+	
+}
+
+
+
+
 //  Flexible Countdown
 // Based on earlier “Countdown by Fours”, given
 // lowNum, highNum, mult, print multiples of mult
 // from highNum down to lowNum, using a FOR.
 // For (2,9,3), print 9 6 3 (on successive lines).
+
+function flexibleCount(){
+	
+}
+
+
 //  The Final Countdown
 // This is based on “Flexible Countdown”. The parameter names are not as helpful, but the problem is
 // essentially identical; don’t be thrown off! Given 4 parameters (param1,param2,param3,param4),
